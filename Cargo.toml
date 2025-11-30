@@ -1,0 +1,13 @@
+[package]
+name = "hc-worker"
+version = "0.1.0"
+edition = "2021"
+authors = ["Logan Gatlin <logan@gatlintc.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+worker = { version = "0.7" }
+worker-macros = { version = "0.7" }
+halcyon-lib = { git = "https://git.lgatlin.dev/logan/Halcyon.git", branch = "stable" }
