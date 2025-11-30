@@ -11,3 +11,8 @@ crate-type = ["cdylib"]
 worker = { version = "0.7" }
 worker-macros = { version = "0.7" }
 halcyon-lib = { git = "https://git.lgatlin.dev/logan/Halcyon.git", branch = "stable" }
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
